@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj": {}
+    "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj": {
+    "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj",
+        "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\Amundson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\obj\\",
+        "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -51,6 +51,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[2.2.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
