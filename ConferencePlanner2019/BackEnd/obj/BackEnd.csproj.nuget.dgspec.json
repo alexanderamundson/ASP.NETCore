@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj": {}
+    "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj": {
+    "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj",
         "projectName": "BackEnd",
-        "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\BackEnd.csproj",
+        "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\BackEnd.csproj",
         "packagesPath": "C:\\Users\\Amundson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\BackEnd\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
