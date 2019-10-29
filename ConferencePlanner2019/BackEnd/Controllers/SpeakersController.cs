@@ -1,11 +1,10 @@
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BackEnd.Data;
+using ConferenceDTO;
 
 namespace BackEnd.Controllers
 {
@@ -20,38 +19,39 @@ namespace BackEnd.Controllers
             _db = db;
         }
 
-        // GET: api/Speakers
         [HttpGet]
-        public async Task<ActionResult<List<ConferenceDTO.SpeakerResponse>>> GetSpeakers()
+        public async Task<ActionResult<List<SpeakerResponse>>> GetSpeakers()
         {
             var speakers = await _db.Speakers.AsNoTracking()
-                                     .Include(s => s.SessionSpeakers)
-                                         .ThenInclude(ss => ss.Session)
-                                     .Select(s => s.MapSpeakerResponse())
-                                     .ToListAsync();
+                                             .Include(s => s.SessionSpeakers)
+                                                .ThenInclude(ss => ss.Session)
+                                             .Select(s => s.MapSpeakerResponse())
+                                             .ToListAsync();
+
             return speakers;
         }
 
-        // GET: api/Speakers/5
         [HttpGet("{id:int}")]
-        public async Task<ActionResult<ConferenceDTO.SpeakerResponse>> GetSpeaker(int id)
+        public async Task<ActionResult<SpeakerResponse>> GetSpeaker(int id)
         {
             var speaker = await _db.Speakers.AsNoTracking()
-                                     .Include(s => s.SessionSpeakers)
-                                         .ThenInclude(ss => ss.Session)
-                                     .SingleOrDefaultAsync(s => s.ID == id);
+                                            .Include(s => s.SessionSpeakers)
+                                                .ThenInclude(ss => ss.Session)
+                                            .SingleOrDefaultAsync(s => s.ID == id);
+
             if (speaker == null)
             {
                 return NotFound();
             }
+
             var result = speaker.MapSpeakerResponse();
             return result;
         }
 
         [HttpPost]
-        public async Task<ActionResult<ConferenceDTO.SpeakerResponse>> PostSpeaker(ConferenceDTO.Speaker input)
+        public async Task<IActionResult> CreateSpeaker(ConferenceDTO.Speaker input)
         {
-            var speaker = new Speaker
+            var speaker = new Data.Speaker
             {
                 Name = input.Name,
                 WebSite = input.WebSite,
@@ -69,7 +69,7 @@ namespace BackEnd.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> PutSpeaker(int id, ConferenceDTO.Speaker input)
         {
-            var speaker = await _db.FindAsync<Speaker>(id);
+            var speaker = await _db.FindAsync<Data.Speaker>(id);
 
             if (speaker == null)
             {
@@ -87,9 +87,9 @@ namespace BackEnd.Controllers
         }
 
         [HttpDelete("{id:int}")]
-        public async Task<ActionResult<ConferenceDTO.SpeakerResponse>> DeleteSpeaker(int id)
+        public async Task<ActionResult<SpeakerResponse>> DeleteSpeaker(int id)
         {
-            var speaker = await _db.FindAsync<Speaker>(id);
+            var speaker = await _db.FindAsync<Data.Speaker>(id);
 
             if (speaker == null)
             {
@@ -97,14 +97,11 @@ namespace BackEnd.Controllers
             }
 
             _db.Remove(speaker);
+
+            // TODO: Handle exceptions, e.g. concurrency
             await _db.SaveChangesAsync();
 
             return speaker.MapSpeakerResponse();
-        }
-
-        private bool SpeakerExists(int id)
-        {
-            return _db.Speakers.Any(e => e.ID == id);
         }
     }
 }
