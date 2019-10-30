@@ -30,7 +30,11 @@ namespace FrontEnd
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
+            
+            services.AddHttpClient<IApiClient, ApiClient>(client =>
+            {
+            client.BaseAddress = new Uri(Configuration["serviceUrl"]);
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
