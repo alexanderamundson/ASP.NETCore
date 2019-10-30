@@ -4438,6 +4438,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ConferenceDTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/ConferenceDTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConferenceDTO.dll": {}
+        }
       }
     }
   },
@@ -12145,10 +12158,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ConferenceDTO/1.0.0": {
+      "type": "project",
+      "path": "../ConferenceDTO/ConferenceDTO.csproj",
+      "msbuildProject": "../ConferenceDTO/ConferenceDTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "ConferenceDTO >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12161,11 +12180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\FrontEnd\\FrontEnd.csproj",
+      "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\Amundson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\FrontEnd\\obj\\",
+      "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12183,7 +12202,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\ConferenceDTO\\ConferenceDTO.csproj": {
+              "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\ConferenceDTO\\ConferenceDTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
