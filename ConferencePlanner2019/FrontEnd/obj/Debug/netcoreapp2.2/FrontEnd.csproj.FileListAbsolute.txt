@@ -8,7 +8,6 @@ C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\bin\Debug\netcor
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\bin\Debug\netcoreapp2.2\ConferenceDTO.dll
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\bin\Debug\netcoreapp2.2\ConferenceDTO.pdb
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.csprojAssemblyReference.cache
-C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.csproj.CoreCompileInputs.cache
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.RazorAssemblyInfo.cache
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.RazorAssemblyInfo.cs
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.AssemblyInfoInputs.cache

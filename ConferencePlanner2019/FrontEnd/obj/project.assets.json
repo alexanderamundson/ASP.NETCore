@@ -12180,11 +12180,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\FrontEnd\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\FrontEnd.csproj",
+      "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\FrontEnd\\FrontEnd.csproj",
       "packagesPath": "C:\\Users\\Amundson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\frontend\\obj\\",
+      "outputPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\FrontEnd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12203,8 +12203,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\ConferenceDTO\\ConferenceDTO.csproj": {
-              "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\conferenceplanner2019\\ConferenceDTO\\ConferenceDTO.csproj"
+            "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\ConferenceDTO\\ConferenceDTO.csproj": {
+              "projectPath": "C:\\Users\\Amundson\\Documents\\Core\\ConferencePlanner2019\\ConferenceDTO\\ConferenceDTO.csproj"
             }
           }
         }
