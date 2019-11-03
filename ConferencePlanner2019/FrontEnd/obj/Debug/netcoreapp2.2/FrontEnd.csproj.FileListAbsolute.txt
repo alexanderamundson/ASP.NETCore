@@ -29,3 +29,4 @@ C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcor
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.csproj.CopyComplete
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.dll
 C:\Users\Amundson\Documents\Core\conferenceplanner2019\frontend\obj\Debug\netcoreapp2.2\FrontEnd.pdb
+C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\Razor\Pages\Session.g.cshtml.cs
