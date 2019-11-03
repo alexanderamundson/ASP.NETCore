@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages\\Speaker.cshtml",
+      "TargetPath": "Pages\\Speaker.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
