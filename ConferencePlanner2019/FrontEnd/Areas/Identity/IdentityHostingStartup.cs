@@ -21,6 +21,10 @@ namespace FrontEnd.Areas.Identity
 
                 services.AddDefaultIdentity<User>()
                     .AddEntityFrameworkStores<IdentityDbContext>();
+
+                services.AddDefaultIdentity<User>()
+                    .AddDefaultUI(UIFramework.Bootstrap4)
+                    .AddEntityFrameworkStores<IdentityDbContext>();
             });
         }
     }

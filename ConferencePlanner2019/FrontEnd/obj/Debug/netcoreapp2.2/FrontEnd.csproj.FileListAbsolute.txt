@@ -32,3 +32,6 @@ C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcor
 C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\FrontEnd.csproj.CopyComplete
 C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\FrontEnd.dll
 C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\FrontEnd.pdb
+C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\FrontEnd.csproj.CoreCompileInputs.cache
+C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Amundson\Documents\Core\ConferencePlanner2019\FrontEnd\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_LoginPartial.g.cshtml.cs
