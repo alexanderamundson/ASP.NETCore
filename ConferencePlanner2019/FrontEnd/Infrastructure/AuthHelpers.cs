@@ -1,4 +1,8 @@
-﻿namespace FrontEnd.Infrastructure
+﻿using FrontEnd.Infrastructure;
+using Microsoft.AspNetCore.Authorization;
+using System.Linq;
+
+namespace FrontEnd.Infrastructure
 {
     public static class AuthConstants
     {

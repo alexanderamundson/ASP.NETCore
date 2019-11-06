@@ -1,4 +1,11 @@
-﻿public class ClaimsPrincipalFactory : UserClaimsPrincipalFactory<User>
+﻿using FrontEnd.Data;
+using FrontEnd.Services;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Options;
+using System.Security.Claims;
+using System.Threading.Tasks;
+
+public class ClaimsPrincipalFactory : UserClaimsPrincipalFactory<User>
 {
     private readonly IApiClient _apiClient;
 
