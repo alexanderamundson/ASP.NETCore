@@ -19,9 +19,21 @@ namespace FrontEnd.Areas.Identity
                     options.UseSqlite(
                         context.Configuration.GetConnectionString("IdentityDbContextConnection")));
 
-                services.AddDefaultIdentity<User>()
-                    .AddDefaultUI(UIFramework.Bootstrap4)
-                    .AddEntityFrameworkStores<IdentityDbContext>();
+                services.AddDefaultIdentity<User>(
+                    /*options =>
+                {
+                    options.Password.RequireDigit = false;
+                    options.Password.RequiredLength = 1;
+                    options.Password.RequiredUniqueChars = 0;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                }*/
+                )
+                .AddDefaultUI(UIFramework.Bootstrap4)
+                .AddEntityFrameworkStores<IdentityDbContext>()
+                .AddClaimsPrincipalFactory<ClaimsPrincipalFactory>();
+
             });
         }
     }
