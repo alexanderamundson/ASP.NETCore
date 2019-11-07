@@ -25,6 +25,11 @@ namespace FrontEnd.Pages
 
         public int CurrentDayOffset { get; set; }
 
+        [TempData]
+        public string Message { get; set; }
+
+        public bool ShowMessage => !string.IsNullOrEmpty(Message);
+
         public bool IsAdmin { get; set; }
 
         public async Task OnGet(int day = 0)
